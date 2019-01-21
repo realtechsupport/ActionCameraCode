@@ -55,7 +55,7 @@ sudo pip3 install datetime
 sudo pip3 install psutil
 sudo apt install ffmpeg
 
-go to cloud console VM instances… menu on right STOP
+go to cloud console VM instances… menu on right STOP (otherwise the instance continues running and incurs costs..)
 
 ++ install gcloud
 https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
@@ -69,11 +69,11 @@ COPY FILES using gcloud copy procedure: gcloud compute scp
 
 ++ from remote instance to local computer:
 gcloud compute scp <instancename>:path_to_file local_destination
-gcloud compute scp awayfromhome:/home/marcbohlen/data/dummy.txt /home/realtech/Desktop/
+gcloud compute scp awayfromhome:/home/yourname/data/dummy.txt /home/yourcomputer/Desktop/
 
 ++ from local computer to remote instance (assuming troube in in your current dir)
 gcloud compute scp file local_destination <user@instancename>:path
-gcloud compute scp trouble.doc marcbohlen@awayfromhome:~/data/
+gcloud compute scp trouble.doc yourname@yourinstance:~/data/
 
  >> SSH in via console, setup your workspace
 mkdir code
