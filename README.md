@@ -36,8 +36,7 @@ kernel = (11,11)
 type = process_images_blur (datapath+'temp/', datapath, kernel)
 
 
-3) overlay two video segments in a given proportion
-
+3) overlay two video segments in a given proportion  
 segment1 = 'mv1.mp4'  
 segment2 = 'mv1_edgedetect.mp4'  
 seg1_contrib = 0.3  
@@ -45,14 +44,12 @@ seg2_contrib = 1 - seg1_contrib
 type = process_images_videooverlay(datapath, 'temp/', 'temp2/', segment1, segment2, seg1_contrib, seg2_contrib)
 
 
-and then to create a new .mp4 from the images created in any of the previous steps  
-(if reverse is True, then the sequence is reversed)
-
+... and then to create a new .mp4 from the images created in any of the previous steps  
+(if reverse is True, then the sequence is reversed)  
 create_video_from_images(datapath, 'temp/', framerate, reverse, output)
 
 
-Known issues:
-
+Known issues:  
 HD format 1920x1080 @ 30fps in H264 is fine. However, H265 encoded files are currently not supported (on the todo list)
 
 
