@@ -1,5 +1,5 @@
 # ActionCameraCode
-ART350 utilities - University of Buffalo, Spring 2019
+ART350 video processing utilities - University of Buffalo, Spring 2019
 
 ------------------------------------------------------------------------------------------------------------------------------
 Overview
