@@ -16,10 +16,11 @@ python3, ffmpeg, pillow, opencv, dattime, psutil
 Files  
 av_helper.py, image_helper.py, utilities.py  
 
-example usage: :
+example usage: 
 
 from av_helper import *  
 from image_helper import *  
+
 datapath = 'where you keep your data'  
 videofile = 'yourvideofile.mp4'  
 start = 1; end = 4    
