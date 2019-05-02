@@ -1,86 +1,22 @@
 # ActionCameraCode
-code examples and utilities for ART384 ActionCameraCode at Uni Buffalo, Spring 2019
-Getting your Google VM started
-
-Go to: https://console.cloud.google.com/education
-Enter code. Redeem
-
-At the console
-https://console.cloud.google.com/home/dashboard
-
-
-Create a project name
-select project
-navigation menu top left
-compute engine
-vm instance (wait a moment)
-create
-
--name
--region / zone (US cheaper, lower latency)
--1vCPU
--boot disk -> Ubuntu 18.04LTS
--allow default access
--allow http and https traffic
--create
-
-Then…create an ip address
-Click on your instance name
-Top menu – edit
-
-Scroll down to network interfaces – edit (via pencil icon)
-External  IP type
-
-Reserve new static IP
-Type a name
-
-Go to dashboard
-Go to compute engine
-Click SSH
+code examples and utilities for ART350 ActionCameraCode at University of Buffalo, Spring 2019
 
 ------------------------------------------------------------------------------------------------------------------------------
-Install libraries on your server.
+Overview
+This course is an introduction to computational thinking in code combined with an overview of great video art. Students are exposed to the opportunities of time based image capture along two vectors. First, with repeated field experiments with GoPro cameras. Second with exposure to film/video classics where camera handling played an important role, including Dziga Vertov's 'Man with a Move Camera' 1929, Luis Buñuel's 'Un chien andalou' 1929, Chris Marker's 'La Jetée' 1962, Michael Snow's 'La Région Centrale' 1971, Douglas Gordon's 'Psycho' 1993, Pipilotti Rist's 'Ever is overall' 1997 and others. 
 
-sudo apt update
-sudo apt upgrade
-sudo apt install python3 python3-dev
-sudo apt install python3-pip
-sudo pip3 install numpy
-sudo apt-get install libsm6
-sudo apt-get install libxrender1
-sudo pip3 install opencv-python
-sudo pip3 install matplotlib
-sudo pip3 install Pillow
-sudo pip3 install datetime
-sudo pip3 install psutil
-sudo apt install ffmpeg
+After several weeks of image capture and screenings, the course moves to coding, on an introductory level in python (3). Technically, the functions offered below are nothing more than wrappers of ffmpeg funcionalities. But they allow coding novices to concentrate on processing video and spending less time on setting sometimes arcane flags and conditions.
 
-go to cloud console VM instances… menu on right STOP (otherwise the instance continues running and incurs costs..)
+While many programming ideas are not covered in this course, those that do pertain to video management are adequately addressed, and contextualized in code development such that beginners can use the code examples developed here to perform computationally based video experiments on their own.
 
-++ install gcloud
-https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
+Dependencies
+python3, ffmpeg, pillow, opencv, dattime, psutil
 
-1) curl https://sdk.cloud.google.com | bash
-2) source ~/.bashrc
-3) gcloud init
+Files
+av_helper.py
+image_helper.py
+utilities.py
 
-COPY FILES using gcloud copy procedure: gcloud compute scp
-(issued on your local computer !)
+example usage:
 
-++ from remote instance to local computer:
-gcloud compute scp <instancename>:path_to_file local_destination
-gcloud compute scp awayfromhome:/home/yourname/data/dummy.txt /home/yourcomputer/Desktop/
 
-++ from local computer to remote instance (assuming troube in in your current dir)
-gcloud compute scp file local_destination <user@instancename>:path
-gcloud compute scp trouble.doc yourname@yourinstance:~/data/
-
- >> SSH in via console, setup your workspace
-mkdir code
-mkdir data
-edit a file with nano:
-nano filename
-save: ctrl O
-exit: ctrl X
-exit session with ‘ctrl d’
--------------------------------------------------------------------------------------------------------------------------------
