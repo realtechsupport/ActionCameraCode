@@ -14,7 +14,7 @@ Dependencies
 python3, ffmpeg, pillow, opencv, tesseract, dattime, psutil
 
 Files  
-av_helper.py, image_helper.py, utilities.py  
+av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py
 
 example usage: 
 
