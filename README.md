@@ -29,7 +29,7 @@ time_e = time.strftime("%H:%M:%S", time.gmtime(end))
 info = videofile.split('.')  
 segmentname = info[0] + '_' + str(start) + '_' + str(end) + '.' + info[1]  
 
-1) extract a segment wit the specified start and end times in seconds  
+1) extract a segment with the specified start and end times in seconds  
 extract_segment(datapath, videofile, time_s, time_e, segmentname)
 
 2) blur all images in that segment  
