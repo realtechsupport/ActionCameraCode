@@ -18,9 +18,7 @@ av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_proces
 
 example usage: 
 
-from av_helper import *  
-from image_helper import *  
-
+from av_helper import * 
 datapath = 'where you keep your data'  
 videofile = 'yourvideofile.mp4'  
 start = 1; end = 4    
