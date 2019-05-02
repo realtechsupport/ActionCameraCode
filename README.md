@@ -8,10 +8,10 @@ This course is an introduction to computational thinking in code combined with a
 
 After several weeks of image capture and screenings, the course moves to coding, on an introductory level in python (3). Technically, the functions offered below are nothing more than wrappers of ffmpeg funcionalities. But they allow coding novices to concentrate on processing video and wasting less time with setting arcane flags and parameters.
 
-While many programming ideas are not covered in this course, those that do pertain to video management are adequately addressed, and contextualized in code development such that beginners can use the code examples developed here to perform computationally based video experiments on their own.
+While many programming ideas are not covered in this course, those that do pertain to video management are addressed, and contextualized in code such that beginners can use the code examples developed here to perform computationally based video experiments on their own.
 
 Dependencies  
-python3, ffmpeg, pillow, opencv, dattime, psutil
+python3, ffmpeg, pillow, opencv, tesseract, dattime, psutil
 
 Files  
 av_helper.py, image_helper.py, utilities.py  
