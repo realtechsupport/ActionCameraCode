@@ -27,7 +27,7 @@ Example usage
 from av_helper import * 
 datapath = 'where you keep your data'  
 videofile = 'yourvideofile.mp4'  
-start = 1; end = 4    
+start = 1; end = 4  #start and end time in seconds  
 time_s = time.strftime("%H:%M:%S", time.gmtime(start))  
 time_e = time.strftime("%H:%M:%S", time.gmtime(end))  
 info = videofile.split('.')  
@@ -36,7 +36,7 @@ segmentname = info[0] + '_' + str(start) + '_' + str(end) + '.' + info[1]
 1) extract a segment with the specified start and end times in seconds  
 extract_segment(datapath, videofile, time_s, time_e, segmentname)
 
-2) blur all images in that segment  
+2) blur all images (convolution with specified kernel) in that segment  
 kernel = (11,11)  
 type = process_images_blur (datapath+'temp/', datapath, kernel)
 
@@ -51,7 +51,7 @@ type = process_images_videooverlay(datapath, 'temp/', 'temp2/', segment1, segmen
 
 ... and then to create a new .mp4 from the images created in any of the previous steps  
 create_video_from_images(datapath, 'temp/', framerate, reverse, output)  
-(if reverse is True, then the sequence is reversed) 
+(if reverse is set to True, then the sequence is reversed) 
 
 Detailed examples  
 see extract_process_make.py for the complete pipeline of extraction, manipulation and video segment creation.  
