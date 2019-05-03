@@ -25,7 +25,7 @@ Files
 av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py
 
 Comments  
-platform: developed and tested on ubuntu 18.0tLTS 
+platform: developed and tested on ubuntu 18.0tLTS  
 GoPro input: HD 1920x1080 @ 30fps in H264 MP4
 
 
