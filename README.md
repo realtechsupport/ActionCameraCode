@@ -46,22 +46,21 @@ extract_segment(datapath, videofile, time_s, time_e, segmentname)
 kernel = (11,11)  
 type = process_images_blur (datapath+'temp/', datapath, kernel)
 
-
 3) *overlay two video segments in a given proportion  *
 segment1 = 'mv1.mp4'  
 segment2 = 'mv1_edgedetect.mp4'  
 seg1_contrib = 0.3; seg2_contrib = 1-seg1_contrib  
 type = process_images_videooverlay(datapath, 'temp/', 'temp2/', segment1, segment2, seg1_contrib, seg2_contrib)
 
-
 4)*create a new .mp4 from the images created in any of the previous steps  *
 create_video_from_images(datapath, 'temp/', framerate, reverse, output)
 
-
 **Detailed examples**  
-see extract_process_make.py for the complete pipeline of extraction, manipulation and video segment creation.  
-see combine_segments.py to see how the individual segments are placed into a final video product.
+see *extract_process_make.py* for the complete pipeline of extraction, manipulation and video segment creation.  
+see *combine_segments.py* to see how the individual segments are placed into a final video product.
 
+**Sameple output**  
+see video folder
 
 **Known issues**  
 H265 encoded files are currently not supported (on the todo list)
