@@ -17,6 +17,7 @@ More importantly, experimentation with these code artifacts allows students to e
 
 **Acknowledgements**  
 Supported in part by a Google Cloud Platform Education Grant  
+Donald Brant created the utilities in don_helper.py  
 
 **Dependencies**    
 python3, ffmpeg, pillow, opencv, tesseract, datetime, psutil
