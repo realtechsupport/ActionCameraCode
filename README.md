@@ -25,13 +25,15 @@ Files
 av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py
 
 Comments  
-Tested on ubuntu 18.0tLTS  
+platform: developed and tested on ubuntu 18.0tLTS 
+GoPro input: HD 1920x1080 @ 30fps in H264 MP4
+
 
 Example usage
 
 from av_helper import * 
-datapath = 'where you keep your data'  
-videofile = 'yourvideofile.mp4'  
+datapath = 'where you keep your gopro data'  
+videofile = 'yourgoprofile.mp4'  
 start = 1; end = 4  #start and end time in seconds  
 time_s = time.strftime("%H:%M:%S", time.gmtime(start))  
 time_e = time.strftime("%H:%M:%S", time.gmtime(end))  
@@ -64,6 +66,6 @@ see combine_segments.py to see how the individual segments are placed into a fin
 
 
 Known issues:  
-HD format 1920x1080 @ 30fps in H264 is fine. However, H265 encoded files are currently not supported (on the todo list)
+H265 encoded files are currently not supported (on the todo list)
 
 
