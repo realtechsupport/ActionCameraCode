@@ -52,7 +52,7 @@ segment2 = 'mv1_edgedetect.mp4'
 seg1_contrib = 0.3; seg2_contrib = 1-seg1_contrib  
 type = process_images_videooverlay(datapath, 'temp/', 'temp2/', segment1, segment2, seg1_contrib, seg2_contrib)
 
-4)*create a new .mp4 from the images created in any of the previous steps*  
+4) *create a new .mp4 from the images created in any of the previous steps*  
 create_video_from_images(datapath, 'temp/', framerate, reverse, output)
 
 **Detailed examples**  
