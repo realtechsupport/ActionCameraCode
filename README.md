@@ -17,13 +17,13 @@ More importantly, experimentation with these code artifacts allows students to e
 
 **Acknowledgements**  
 Supported in part by a Google Cloud Platform Education Grant  
-Donald Brant created the utilities in don_helper.py  
+Donald Brant created the utilities in peer_helper.py  
 
 **Dependencies**    
 python3, ffmpeg, pillow, opencv, tesseract, datetime, psutil
 
 **Files**    
-av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py
+av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py, peer_helper.py
 
 **Comments**  
 platform: developed and tested on ubuntu 18.04 LTS, google cloud (1vCPU, 3.75GB memory, 10GB storage)  
