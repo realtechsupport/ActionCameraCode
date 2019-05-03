@@ -2,6 +2,7 @@
 #peer_helper.py
 from image_helper import *
 #these utilities were created by Donald Brant, ART350, spring 2019
+
 #-------------------------------------------------------------------------------
 def blue_channel(image):
     '''
