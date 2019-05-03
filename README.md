@@ -2,7 +2,7 @@
 ART350 video experience toolkit - Department of ART - University of Buffalo, Spring 2019  
 
 ------------------------------------------------------------------------------------------------------------------------------
-Overview
+**Overview**
 
 This course is an introduction to computational thinking in code integrated into a survey of great video art. 
 
@@ -15,22 +15,21 @@ While many programming ideas are not covered in this course, those that do perta
 More importantly, experimentation with these code artifacts allows students to explore the shifting locus of creative practice as traditional media intersect with computational methods.
 
 
-Acknowledgements  
+**Acknowledgements**  
 Supported in part by a Google Cloud Platform Education Grant  
 
-Dependencies  
+**Dependencies**    
 python3, ffmpeg, pillow, opencv, tesseract, datetime, psutil
 
-Files  
+**Files**    
 av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py
 
-Comments  
+**Comments**  
 platform: developed and tested on ubuntu 18.04 LTS, google cloud (1vCPU, 3.75GB memory, 10GB storage)  
 gopro input: HD 1920x1080@30fps; H264 MP4
 
 
-Example usage
-
+**Example usage**  
 from av_helper import * 
 datapath = 'where you keep your gopro data'  
 videofile = 'yourgoprofile.mp4'  
@@ -40,32 +39,31 @@ time_e = time.strftime("%H:%M:%S", time.gmtime(end))
 info = videofile.split('.')  
 segmentname = info[0] + '_' + str(start) + '_' + str(end) + '.' + info[1]  
 
-1) extract a segment with the specified start and end times in seconds  
+1) *extract a segment with the specified start and end times in seconds * 
 extract_segment(datapath, videofile, time_s, time_e, segmentname)
 
-2) blur all images (convolution with specified kernel) in that segment  
+2) *operate on all images (here blur via convolution with specified kernel) in that segment * 
 kernel = (11,11)  
 type = process_images_blur (datapath+'temp/', datapath, kernel)
 
 
-3) overlay two video segments in a given proportion  
+3) *overlay two video segments in a given proportion  *
 segment1 = 'mv1.mp4'  
 segment2 = 'mv1_edgedetect.mp4'  
-seg1_contrib = 0.3  
-seg2_contrib = 1 - seg1_contrib  
+seg1_contrib = 0.3; seg2_contrib = 1-seg1_contrib  
 type = process_images_videooverlay(datapath, 'temp/', 'temp2/', segment1, segment2, seg1_contrib, seg2_contrib)
 
 
-... and then to create a new .mp4 from the images created in any of the previous steps  
-create_video_from_images(datapath, 'temp/', framerate, reverse, output)  
-(if reverse is set to True, then the sequence is reversed) 
+4)*create a new .mp4 from the images created in any of the previous steps  *
+create_video_from_images(datapath, 'temp/', framerate, reverse, output)
 
-Detailed examples  
+
+**Detailed examples**  
 see extract_process_make.py for the complete pipeline of extraction, manipulation and video segment creation.  
 see combine_segments.py to see how the individual segments are placed into a final video product.
 
 
-Known issues:  
+**Known issues**  
 H265 encoded files are currently not supported (on the todo list)
 
 
