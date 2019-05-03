@@ -1,5 +1,5 @@
 # ActionCameraCode
-ART350 video processing utilities - University of Buffalo, Spring 2019  
+ART350 video processing utilities - Department of ART - University of Buffalo, Spring 2019  
 
 ------------------------------------------------------------------------------------------------------------------------------
 Overview
@@ -9,6 +9,9 @@ This course is an introduction to computational thinking in code integrated into
 After several weeks of field recordings and screenings, the course moves to coding, on an introductory level in python(3). TThe course produced a large collection of functions that operate on individual images and on video segments, ranging from basic color management to video overlay. Technically, the functions offered below are mostly wrappers of ffmpeg and opencv funcionalities. But they allow coding novices to concentrate on desiging video experiences and wasting less time with setting arcane flags and parameters.
 
 While many programming ideas are not covered in this course, those that do pertain to video management are addressed, and contextualized in code such that beginners can use the examples developed here to perform computationally based video experiments on their own.
+
+More importantly, experimentation with these code artifacts allows students to explore the shifting locus of creative practice as traditional media intersect with computational methods.
+
 
 Acknowledgements  
 Supported in part by a Google Cloud Platform Education Grant  
