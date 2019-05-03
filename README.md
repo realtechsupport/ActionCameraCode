@@ -50,7 +50,7 @@ type = process_images_videooverlay(datapath, 'temp/', 'temp2/', segment1, segmen
 
 
 ... and then to create a new .mp4 from the images created in any of the previous steps  
-create_video_from_images(datapath, 'temp/', framerate, reverse, output)
+create_video_from_images(datapath, 'temp/', framerate, reverse, output)  
 (if reverse is True, then the sequence is reversed) 
 
 Detailed examples  
