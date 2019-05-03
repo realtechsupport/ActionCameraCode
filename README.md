@@ -63,7 +63,7 @@ see *combine_segments.py*
 to understand how the individual segments are placed into a final video product.
 
 **Results**  
-see video folder for examples (.ogg low resolution for this repository)
+see results.md (.ogg low resolution only)
 
 **Known issues**  
 H265 encoded MP4 are currently not supported.
