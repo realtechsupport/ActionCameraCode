@@ -1,5 +1,5 @@
 # ActionCameraCode
-ART350 video processing utilities - University of Buffalo, Spring 2019
+ART350 video processing utilities - University of Buffalo, Spring 2019  
 
 ------------------------------------------------------------------------------------------------------------------------------
 Overview
@@ -10,13 +10,19 @@ After several weeks of field recordings and screenings, the course moves to codi
 
 While many programming ideas are not covered in this course, those that do pertain to video management are addressed, and contextualized in code such that beginners can use the examples developed here to perform computationally based video experiments on their own.
 
+Acknowledgements  
+Supported in part by a Google Cloud Platform Education Grant  
+
 Dependencies  
 python3, ffmpeg, pillow, opencv, tesseract, datetime, psutil
 
 Files  
 av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py
 
-example usage: 
+Comments
+tested on ubuntu 18.0tLTS  
+
+Example usage
 
 from av_helper import * 
 datapath = 'where you keep your data'  
