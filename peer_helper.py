@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#don_helper.py
+#peer_helper.py
 from image_helper import *
 #these utilities were created by Donald Brant, ART350, spring 2019
 #-------------------------------------------------------------------------------
