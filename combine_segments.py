@@ -1,5 +1,4 @@
-from image_helper import *
-from av_helper_v6 import *
+from av_helper import *
 #ART350
 #combine multiple sections to one video
 #extract_combine_video.py
