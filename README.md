@@ -19,8 +19,8 @@ python3, ffmpeg, pillow, opencv, tesseract, datetime, psutil
 Files  
 av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py
 
-Comments
-tested on ubuntu 18.0tLTS  
+Comments  
+Tested on ubuntu 18.0tLTS  
 
 Example usage
 
