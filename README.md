@@ -63,6 +63,6 @@ see *combine_segments.py* to see how the individual segments are placed into a f
 see video folder
 
 **Known issues**  
-H265 encoded files are currently not supported (on the todo list)
+H265 encoded MP4 are currently not supported.
 
 
