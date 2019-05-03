@@ -1,4 +1,5 @@
-*Examples of student projects 2019*  
+*Examples of student projects 2019* 
+(.ogg 320x240 min format)  
 
 [Ying Chen - springday](http://www.realtechsupport.org/temp/ART350/YingChen_springday.ogg)   
 [Anita Polvinen - untitled](http://www.realtechsupport.org/temp/ART350/AnitaPolvinen_untitled.ogg)  
