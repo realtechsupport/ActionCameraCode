@@ -25,7 +25,7 @@ Files
 av_helper.py, image_helper.py, utilities.py, combine_segments.py, extract_process_make.py
 
 Comments  
-platform: developed and tested on ubuntu 18.04 LTS, created as VM on google cloud ((1vCPU, 3.75GB memory, 10GB storage)  
+platform: developed and tested on ubuntu 18.04 LTS, google cloud (1vCPU, 3.75GB memory, 10GB storage)  
 gopro input: HD 1920x1080@30fps; H264 MP4
 
 
