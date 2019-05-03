@@ -56,8 +56,10 @@ type = process_images_videooverlay (datapath, 'temp/', 'temp2/', segment1, segme
 create_video_from_images (datapath, 'temp/', framerate, reverse, output)
 
 **Detailed examples**  
-see *extract_process_make.py* for the complete pipeline of extraction, manipulation and video segment creation.  
-see *combine_segments.py* to see how the individual segments are placed into a final video product.
+see *extract_process_make.py*  
+for the complete pipeline of extraction, manipulation and video segment creation.  
+see *combine_segments.py*  
+to understand how the individual segments are placed into a final video product.
 
 **Results**  
 see video folder
