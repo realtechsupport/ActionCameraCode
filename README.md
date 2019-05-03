@@ -39,27 +39,27 @@ time_e = time.strftime("%H:%M:%S", time.gmtime(end))
 info = videofile.split('.')  
 segmentname = info[0] + '_' + str(start) + '_' + str(end) + '.' + info[1]  
 
-1) *extract a segment with the specified start and end times in seconds * 
+1) *extract a segment with the specified start and end times in seconds*   
 extract_segment(datapath, videofile, time_s, time_e, segmentname)
 
-2) *operate on all images (here blur via convolution with specified kernel) in that segment * 
+2) *operate on all images (here blur via convolution with specified kernel) in that segment*   
 kernel = (11,11)  
 type = process_images_blur (datapath+'temp/', datapath, kernel)
 
-3) *overlay two video segments in a given proportion  *
+3) *overlay two video segments in a given proportion*  
 segment1 = 'mv1.mp4'  
 segment2 = 'mv1_edgedetect.mp4'  
 seg1_contrib = 0.3; seg2_contrib = 1-seg1_contrib  
 type = process_images_videooverlay(datapath, 'temp/', 'temp2/', segment1, segment2, seg1_contrib, seg2_contrib)
 
-4)*create a new .mp4 from the images created in any of the previous steps  *
+4)*create a new .mp4 from the images created in any of the previous steps*  
 create_video_from_images(datapath, 'temp/', framerate, reverse, output)
 
 **Detailed examples**  
 see *extract_process_make.py* for the complete pipeline of extraction, manipulation and video segment creation.  
 see *combine_segments.py* to see how the individual segments are placed into a final video product.
 
-**Sameple output**  
+**Results**  
 see video folder
 
 **Known issues**  
