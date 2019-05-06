@@ -1,5 +1,5 @@
 # ActionCameraCode
-ART350 video experience toolkit - Department of ART - University of Buffalo, Spring 2019  
+ART350 video experimentation toolkit - Department of ART - University of Buffalo, Spring 2019  
 
 ------------------------------------------------------------------------------------------------------------------------------
 **Overview**
