@@ -45,6 +45,7 @@ def shift_image(image, xshift, yshift):
 #-------------------------------------------------------------------------------
 
 def overlay(image1, v1, image2, v2, v3):
+#image1 and image2 must have same dimensions
 #v1 and v2 are weights (for each of the images) and must add to 1.0; v3 usually 0
     background = cv2.imread(image1)
     overlay = cv2.imread(image2)
