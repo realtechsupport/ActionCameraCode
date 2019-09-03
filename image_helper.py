@@ -45,6 +45,7 @@ def shift_image(image, xshift, yshift):
 #-------------------------------------------------------------------------------
 
 def overlay(image1, v1, image2, v2, v3):
+#v1 and v2 are weights (for each of the images) and must add to 1.0; v3 usually 0
     background = cv2.imread(image1)
     overlay = cv2.imread(image2)
     result = cv2.addWeighted(background, v1, overlay, v2, v3)
@@ -151,7 +152,7 @@ def addtext_to_image(datapath, fontpath, imagename, message, fontchoice, fontsiz
 	width, height = im.size
 	font = ImageFont.truetype(fontpath+fontchoice, fontsize)
 	draw = ImageDraw.Draw(im)
-	draw.text((0.1*width, 0.5*height), message, font=font, fill=color)
+	draw.text((x*width, y*height), message, font=font, fill=color)
 	imcv = np.array(im)
 	imcv_rgb = cv2.cvtColor(imcv, cv2.COLOR_BGR2RGB)
 	return(imcv_rgb)
